@@ -1,0 +1,85 @@
+{
+  "name": "@eldrforge/shared",
+  "version": "0.1.0",
+  "description": "Shared utilities for Eldrforge tools - storage, validation, errors, and more",
+  "main": "dist/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calenvarek/shared-utils.git"
+  },
+  "scripts": {
+    "build": "npm run lint && tsc --noEmit && vite build",
+    "dev": "vite",
+    "watch": "vite build --watch",
+    "test": "vitest run --coverage",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "clean": "rm -rf dist",
+    "precommit": "npm run clean && npm run build && npm run lint && npm run test",
+    "prepublishOnly": "npm run clean && npm run lint && npm run build && npm run test"
+  },
+  "keywords": [
+    "utilities",
+    "storage",
+    "validation",
+    "errors",
+    "helpers",
+    "typescript"
+  ],
+  "author": "Calen Varek <calenvarek@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "glob": "^13.0.0",
+    "js-yaml": "^4.1.0",
+    "moment-timezone": "^0.6.0",
+    "semver": "^7.7.2",
+    "zod": "^4.1.12"
+  },
+  "peerDependencies": {
+    "@eldrforge/git-tools": "^0.1.0",
+    "winston": "^3.17.0"
+  },
+  "peerDependenciesMeta": {
+    "@eldrforge/git-tools": {
+      "optional": true
+    },
+    "winston": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eldrforge/git-tools": "^0.1.10",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.33.0",
+    "@swc/core": "^1.13.3",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.10.1",
+    "@types/semver": "^7.7.0",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.47.0",
+    "@vitest/coverage-v8": "^4.0.13",
+    "esbuild": "0.27.0",
+    "eslint": "^9.33.0",
+    "eslint-plugin-import": "^2.32.0",
+    "globals": "^16.3.0",
+    "mockdate": "^3.0.5",
+    "typescript": "^5.9.2",
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.3.0",
+    "vite-plugin-node": "^7.0.0",
+    "vitest": "^4.0.13",
+    "winston": "^3.17.0"
+  }
+}
