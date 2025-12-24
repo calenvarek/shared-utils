@@ -11,14 +11,14 @@ dayjs.extend(timezone);
  * about not letting Dayjs instances leak into the rest of the codebase. Having Dayjs objects
  * floating around the application leads to inconsistent timezone handling, makes testing more
  * difficult, and creates subtle bugs that are hard to track down.
- * 
+ *
  * By wrapping dayjs completely and only exposing plain JavaScript Date objects, we get several
  * key benefits:
  * 1. Consistent timezone handling through a single configuration point
  * 2. Simpler testing since we only need to mock this one library
  * 3. Type safety - the rest of the codebase only deals with standard Date objects
  * 4. No risk of dayjs method chains creating unexpected timezone shifts
- * 
+ *
  * The Library interface gives us full control over all date operations while keeping the messy
  * details of timezone manipulation contained in one place. Yes it's more code, but the peace of
  * mind is worth it.
