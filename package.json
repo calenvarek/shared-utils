@@ -59,7 +59,7 @@
     }
   },
   "devDependencies": {
-    "@eldrforge/git-tools": "^0.1.10",
+    "@eldrforge/git-tools": "^0.1.11",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.33.0",
     "@swc/core": "^1.13.3",
