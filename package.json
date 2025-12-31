@@ -1,6 +1,6 @@
 {
   "name": "@eldrforge/shared",
-  "version": "0.1.5",
+  "version": "0.1.6-dev.0",
   "description": "Shared utilities for Eldrforge tools - storage, validation, errors, and more",
   "main": "dist/index.js",
   "type": "module",
