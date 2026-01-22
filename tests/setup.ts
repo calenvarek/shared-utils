@@ -1,5 +1,5 @@
 /**
- * Test setup for @eldrforge/shared
+ * Test setup for @grunnverk/shared
  */
 
 import { afterEach } from 'vitest';
