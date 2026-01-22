@@ -1,6 +1,6 @@
 {
   "name": "@grunnverk/shared",
-  "version": "1.5.2-dev.0",
+  "version": "1.5.2",
   "description": "Shared utilities for grunnverk tools - storage, validation, errors, and more",
   "main": "dist/index.js",
   "type": "module",
