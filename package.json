@@ -48,7 +48,7 @@
     "js-yaml": "^4.1.0",
     "moment-timezone": "^0.6.0",
     "semver": "^7.7.2",
-    "zod": "^4.1.12"
+    "zod": "^4.3.6"
   },
   "peerDependencies": {
     "@grunnverk/git-tools": "^1.5.4",
