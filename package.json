@@ -68,7 +68,7 @@
     "@grunnverk/git-tools": "^1.5.4",
     "@swc/core": "^1.13.3",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.1.0",
     "@types/semver": "^7.7.0",
     "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^8.39.1",
