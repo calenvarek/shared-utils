@@ -1,6 +1,6 @@
 {
   "name": "@grunnverk/shared",
-  "version": "1.5.8",
+  "version": "1.5.9-dev.0",
   "description": "Shared utilities for grunnverk tools - storage, validation, errors, and more",
   "main": "dist/index.js",
   "type": "module",
@@ -25,7 +25,7 @@
     "test": "rm -rf coverage && vitest run --coverage",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist coverage",
     "precommit": "npm run lint && npm run build && npm run test",
     "prepublishOnly": "npm run clean && npm run lint && npm run build && npm run test"
   },
@@ -74,7 +74,7 @@
     "@typescript-eslint/eslint-plugin": "^8.39.1",
     "@typescript-eslint/parser": "^8.47.0",
     "@vitest/coverage-v8": "^4.0.13",
-    "ajv": "^8.17.1",
+    "ajv": "^8.18.0",
     "esbuild": "0.27.0",
     "eslint": "^9.33.0",
     "eslint-plugin-import": "^2.32.0",
